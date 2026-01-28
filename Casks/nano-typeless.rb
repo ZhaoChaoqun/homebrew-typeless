@@ -1,10 +1,10 @@
-cask "typeless" do
+cask "nano-typeless" do
   version "1.0.0"
   sha256 "4c4ab308994027241e114fc83b31d6ae6977ea5cb26ce38449dcfd5d06b3a339"
 
   url "https://github.com/ZhaoChaoqun/typeless/releases/download/v#{version}/Typeless-#{version}.zip"
-  name "Typeless"
-  desc "macOS voice-to-text tool powered by local Whisper AI"
+  name "Nano Typeless"
+  desc "Lightweight macOS voice-to-text tool powered by local Whisper AI"
   homepage "https://github.com/ZhaoChaoqun/typeless"
 
   depends_on macos: ">= :sonoma"

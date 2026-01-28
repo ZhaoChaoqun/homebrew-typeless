@@ -1,20 +1,21 @@
-# Homebrew Tap for Typeless
+# Homebrew Tap for Nano Typeless
 
-This is a [Homebrew](https://brew.sh/) tap for [Typeless](https://github.com/ZhaoChaoqun/typeless) - a macOS voice-to-text tool powered by local Whisper AI.
+This is a [Homebrew](https://brew.sh/) tap for [Nano Typeless](https://github.com/ZhaoChaoqun/typeless) - a lightweight macOS voice-to-text tool powered by local Whisper AI.
 
 ## Installation
 
 ```bash
 brew tap ZhaoChaoqun/typeless
-brew install --cask typeless
+brew install --cask nano-typeless
 ```
 
-## About Typeless
+## About Nano Typeless
 
 - 🎤 **Push-to-Talk**: Hold `Fn` key to record, release to transcribe
 - 🔒 **100% Local**: Whisper model runs entirely on-device
 - 🌐 **Multilingual**: Native support for Chinese-English mixed input
 - 💻 **Universal Binary**: Runs natively on both Apple Silicon and Intel Macs
+- ⚡ **Lightweight**: Only 2.76 MB download, instant transcription without cloud processing
 
 ## Requirements
 
