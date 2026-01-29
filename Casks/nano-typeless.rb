@@ -17,6 +17,9 @@ cask "nano-typeless" do
   ]
 
   caveats <<~EOS
+    If macOS shows "Apple cannot verify" warning, run:
+      xattr -cr /Applications/Typeless.app
+
     Typeless requires the following permissions:
     - Microphone: for voice recording
     - Accessibility: for global Fn key detection
