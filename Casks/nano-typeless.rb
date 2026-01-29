@@ -1,6 +1,6 @@
 cask "nano-typeless" do
-  version "1.1.2"
-  sha256 "8b6226549deb2c8579a9d8bc93d9683b8270576e790193558d984fef19d3839d"
+  version "1.1.3"
+  sha256 "e8470414ffadd43b820ea72255f7e503f861b22e7ca80d32c278d98153a50d60"
 
   url "https://github.com/ZhaoChaoqun/typeless/releases/download/v#{version}/Typeless-#{version}.zip"
   name "Nano Typeless"
@@ -13,7 +13,7 @@ cask "nano-typeless" do
 
   zap trash: [
     "~/Library/Preferences/com.typeless.app.plist",
-    "~/Documents/huggingface/models/argmaxinc/whisperkit-coreml",
+    "~/Library/Application Support/Typeless",
   ]
 
   caveats <<~EOS
