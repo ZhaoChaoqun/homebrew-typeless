@@ -13,6 +13,12 @@ cask "nano-typeless" do
 
   app "Nano Typeless.app"
 
+  uninstall script: {
+    executable: "/usr/bin/tccutil",
+    args:       ["reset", "Accessibility", "com.typeless.app"],
+    sudo:       false,
+  }
+
   zap trash: [
     "~/Library/Preferences/com.typeless.app.plist",
     "~/Library/Application Support/Nano Typeless",
