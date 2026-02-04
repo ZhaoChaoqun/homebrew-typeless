@@ -14,8 +14,8 @@ cask "nano-typeless" do
   app "Nano Typeless.app"
 
   uninstall script: {
-    executable: "/usr/bin/tccutil",
-    args:       ["reset", "Accessibility", "com.typeless.app"],
+    executable: "/bin/sh",
+    args:       ["-c", "tccutil reset Accessibility com.typeless.app; tccutil reset Microphone com.typeless.app"],
     sudo:       false,
   }
 
