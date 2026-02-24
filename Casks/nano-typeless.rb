@@ -1,6 +1,6 @@
 cask "nano-typeless" do
-  version "1.2.12"
-  sha256 "d17b7ecf0f8daa8c2b1786c309e17f73ec74be827a83cb79a0ebdf3e68087f9b"
+  version "1.2.13"
+  sha256 "ac84560ca685b377a803102d866cdfab8fee3ad2777affa0a9dcf88ebbe630a1"
 
   url "https://github.com/ZhaoChaoqun/nano-typeless/releases/download/v#{version}/Nano-Typeless-#{version}.zip"
   name "Nano Typeless"
