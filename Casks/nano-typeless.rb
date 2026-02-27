@@ -4,7 +4,7 @@ cask "nano-typeless" do
 
   url "https://github.com/ZhaoChaoqun/nano-typeless/releases/download/v#{version}/Nano-Typeless-#{version}.zip"
   name "Nano Typeless"
-  desc "Lightweight macOS voice-to-text tool powered by local FunASR AI"
+  desc "Lightweight macOS voice-to-text tool powered by local AI"
   homepage "https://github.com/ZhaoChaoqun/nano-typeless"
 
   depends_on macos: ">= :sonoma"
@@ -12,6 +12,11 @@ cask "nano-typeless" do
   conflicts_with cask: "typeless"
 
   app "Nano Typeless.app"
+
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-cr", "#{appdir}/Nano Typeless.app"]
+  end
 
   uninstall script: {
     executable: "/bin/sh",
@@ -25,9 +30,6 @@ cask "nano-typeless" do
   ]
 
   caveats <<~EOS
-    If macOS shows "Apple cannot verify" warning, run:
-      xattr -cr "/Applications/Nano Typeless.app"
-
     Nano Typeless requires the following permissions:
     - Microphone: for voice recording
     - Accessibility: for global Fn key detection
