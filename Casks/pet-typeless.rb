@@ -1,6 +1,6 @@
 cask "pet-typeless" do
-  version "1.0.0"
-  sha256 "4f9313451bb1044878f497f5b7fd7513168689b2530f4f92b704936555f98a94"
+  version "1.0.2"
+  sha256 "3e84a1a23e5fc397a9096c1e3c953789cfb1e5c538c3e2c8ff39cf1b45b3544b"
 
   url "https://github.com/ZhaoChaoqun/pet-typeless/releases/download/v#{version}/Pet-Typeless-#{version}.zip"
   name "Pet Typeless"
